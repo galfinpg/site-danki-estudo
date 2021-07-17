@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.clear{
+    clear: both;
+}
+.center{
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.header{
+    width: 100%;
+    height: 76px;
+    background-color: #212343;
+}
+
+/*aqui é a logo do meu site*/
+.header img{
+    margin: 19px;
+}
+
+.container-banner{
+    width: 100%;
+    height: 557px;
+    background-image: url(../images/header_bg.png); /*bem como é uma imagem de background não atribuimos a tag img, e sim colocamos o background-image*/
+    background-size: cover; /*tecnica que aprenderemos no modulo de responsivo, é para cobrir toda a área.*/
+    background-position: center;
+    min-height: 500px; /*efeito paralaxe para a nossa imagem*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-banner > .center{
+    height: 100%;
+}
+
+.formulario{
+    padding: 10px;
+    width: 400px;
+    height: calc(100% + 30px); /*quando usamos porcentagem no height, temos que colocar uma altura no elemento anterior se não, acaba não funcionando.*/
+    background-color: white;
+    position: relative;
+    top: -15px;
+    border: 8px solid rgba(204, 204, 204, 0.5);     
+    float: right; /*também poderiamos usar o display: inline-block; mas optei por usar o float para trabalhar essa tag.*/
+    background-clip: padding-box;
+}
+
+.formulario h2{/*todos os textos do nosso formulário*/
+    font-family: "Open Sans";
+    font-weight: normal;
+    color: #999999;
+    font-size: 21px;
+}
+
+#texto-superior{/*texto do começo*/
+    text-align: center;
+    font-family: "Open Sans";
+    font-weight: normal;
+    color: #999999;
+    font-size: 21px;
+}
+
+.input-container{
+    font-family: "Open Sans";
+    margin-top:20px;
+}
+
+.input-container span, .formulario p{
+    font-family: "Open Sans";
+    display: inline-block;
+    width: 100%;
+    color: #bbbbbb;
+    font-size: 21px;
+}
+
+.formulario p{
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.input-container input[type=name]{
+    font-size: 20px;
+    margin-top: 8px;
+    width: 344px;
+    height: 55px;
+    border: 1px solid #ccc;
+}
+
+
+.input-container input[type=email]{
+    font-size: 20px;
+    margin-top: 8px;
+    width: 344px;
+    height: 55px;
+    border: 1px solid #ccc;
+}
+
+
+.input-container input[type=tel]{
+    font-size: 20px;
+    margin-top: 8px;
+    width: 344px;
+    height: 55px;
+    border: 1px solid #ccc;
+}
+.formulario .centro{
+    text-align: center;
+}
+.formulario input[type=submit]{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    width: 280px;
+    height: 56px;
+    background-color: #363A6D;
+    color: white;
+    font-size: 25px;
+    font-family: "Open Sans";
+    display: inline-block;
+    cursor: pointer;
+    border-bottom: 5px solid #4a5097;
+}
+
+.formulario input[type=submit]:hover{
+    font-size: 26px;
+    background-color: #2a2d53;
+}
+
+.lista{
+    padding: 30px;
+    float: left;
+    width: 519px;
+    height: 270px;
+    background-color: rgba(33,35,67, 0.7);
+    margin-top: 100px;
+}
+.lista ul{
+    list-style-position: inside;
+}
+
+.lista > ul > li{
+    margin-top: 10px;
+    color: white;
+    font-family: "Open Sans";
+    font-size: 14px;
+}
+
+.bloco2{
+    padding: 40px 0;
+    background-color: rgb(199, 199, 199);
+    text-align: center;
+}
+
+.bloco2 h2{
+    font-family: Open Sans;
+    font-weight: normal;
+}
+
+.bloco2 p{
+    font-family: Open Sans;
+    margin: 15px 0;
+    width: 698px;
+    display: inline-block;
+    text-align: justify;
+}
+
+.seta{
+    position: relative;
+    top: 60px;
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/arrow.png);
+    background-size: 100% 100%;
+    left: 50%;
+    margin-left: -20px;
+}
+
+.informacoes{
+    padding: 90px 0;
+}
+
+.informacoes h2{
+    text-align: center;
+    font-family: "Open Sans";
+    color: #462663;
+    font-weight: normal;
+}
+
+.monitores{
+    margin-top: 40px;
+}
+
+.monitores{
+    text-align: center;
+}
+
+.monitor1{
+    float: left;
+    width: 33.333%;
+    padding: 30px;
+}
+
+.monitor1 img{
+    width: 70px;
+}
+
+.monitor1 p{
+    text-align: justify;
+    font-family: "Open Sans";
+    padding: 10px 25px;
+}
+
+.footer{
+    border-top: 4px solid #888888;
+    padding: 30px 0;
+    background-color: ghostwhite;
+}
+
+.footer h3{
+    color: gray;
+    text-align: center;
+    font-family: "Open Sans";
+}
+
+.footer p{
+    color: gray;
+    text-align: center;
+    font-family: "Open Sans";
+    font-weight: bold;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
